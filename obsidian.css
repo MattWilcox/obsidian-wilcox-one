@@ -1,13 +1,7 @@
 /*
-	LIMITATIONS
-	Obsidian currently doesn't seem to allow themes to link to their own assets (fonts, images, etc.) and so we have to work with what we've got. For example;
-
-	- Needing to use font-imports means there's a network dependency and latency cost (unless it's smart and caching things on the app level - documentation on themeing is currently lacking).
-	- Decorative elements are output as raw SVG in the mark-up instead of added via CSS - so I can't change the iconography.
-	- The app.css is littered with px units to pad and position elements instead of using relative units that scale with the chosen font-size of the user.
-	- JS like the tooltips makes some assumptions about the space available which isn't correct for things like the sliding panes plugin view-actions location.
-
-	The Obsidian markup is not always ideal for flexibility in styling (nothing ever is), so there are some limitations due to the markup layer too.
+	Note to self:
+	- https://publish.obsidian.md/hub/CONTRIBUTING 
+	- https://publish.obsidian.md/hub/04+-+Guides%2C+Workflows%2C+%26+Courses/for+Theme+Designers
 */
 
 /* Configuration */
