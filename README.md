@@ -1,8 +1,7 @@
-# WilcoxOne: Royal
+# Obsidian: WilcoxOne
 A theme for [Obsidian.md](https://obsidian.md).
 
-This theme is available in Dark and Light modes, with a blue accent.
+Works best on high density displays with good colour reproduction.
+Only dark mode at the moment, I may make a light mode alternate later but I don't really use text editors in light mode.
 
-It's intended to be a more elegant option than the default, and works best on high density displays with good colour reproduction.
-
-Note: this is my first shot at theming for Obsidian, so the code itself is a bit messy for my liking - but its functional.
+![https://mattwilcox.net/wilcoxonedark.png]
