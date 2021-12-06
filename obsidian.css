@@ -29,6 +29,7 @@
 		--color-1-2-alt: hsl(227, 56%, 16%);
 		--color-2      : hsl(231, 49%, 39%);
 		--color-3      : hsl(109, 9%, 39%);
+		--color-3-alt  : hsl(109, 9%, 19%);
 		--color-4      : hsl(109, 19%, 92%);
 		--color-4-alt  : hsl(109, 9%, 82%);
 		--color-5      : hsl(176, 16%, 64%);
@@ -225,9 +226,34 @@
 		border: 0;
 		padding: 0.25rem;
 	}
+	/* Show indentation guides for deep lists */
 	.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-children .nav-folder,
 	.nav-folder.mod-root > .nav-folder-children .nav-folder .nav-folder-children .nav-file {
-		border-left: 1px solid var(--color-2);
+		border-left: 1px solid var(--color-3-alt);
+	}
+
+	/* Show indentation guides for deep lists */
+	.markdown-preview-section ul,
+	.markdown-preview-section ol {
+		padding-left: 1.25em;
+	}
+	.markdown-preview-section li > ul,
+	.markdown-preview-section li > ol {
+		position: relative;
+	}
+	.markdown-preview-section li > ul:before,
+	.markdown-preview-section li > ol:before {
+		position: absolute; left: -1em;
+		content: "";
+		width: 1px; height: 100%;
+		background-color: var(--color-3-alt);
+	}
+
+	/* align fold indicators with the indentation guides */
+	.markdown-preview-view .list-collapse-indicator {
+		position: relative; z-index: 2;
+		margin-left: -3em;
+		background-color: var(--color-1-1);
 	}
 
 	.dropdown {
