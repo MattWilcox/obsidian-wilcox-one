@@ -468,9 +468,12 @@
 		}
 		.view-content .collapse-icon svg {
 			transform: scale(1.5);
+			transition: all var(--fast);
+			opacity: 0.3;
 		}
 		.view-content .is-collapsed .collapse-icon svg {
 			transform: scale(1.5) rotate(-90deg);
+			opacity: 1;
 		}
 		.collapse-icon svg path {
 			fill: hsl(109, 19%, 32%);
@@ -563,7 +566,8 @@
 			display: block;
 			font-size: 0.7rem;
 			padding: 0.7rem 1rem; margin-bottom: 1rem;
-			border-bottom: 1px solid var(--background-primary);
+			border-bottom: 1px solid var(--color-1-2);
+			background-color: var(--color-1-2);
 		}
 		/* If Obsidian mark-up was clean with proper whitespace we could get away with `content: attr(class);` as above - but it isn't */
 		pre[class*="frontmatter"]::before   { content: "frontmatter: YAML"; }
@@ -603,7 +607,7 @@
 		text-shadow: none;
 		font-family: var(--font-monospace);
 		font-size: 0.875rem; letter-spacing: 0; line-height: 1.5;
-		background-color: hsl(227, 56%, 13%) !important;
+		background-color: var(--background-primary-alt) !important;
 	}
 
 	/* frontmatter */
